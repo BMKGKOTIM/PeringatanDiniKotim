@@ -7,8 +7,8 @@ function change1(){
   var node = document.getElementById('view');
 domtoimage.toBlob(document.getElementById('view'),opt)
 .then(function (blob) {
-  window.saveAs(blob, 'PERINGATAN DINI.png');
-});
+  window.saveAs(blob, 'PERINGATAN DINI '+today.format('D MMMM YYYY')+'.png');
+}); 
 }
 //FUNCTION UNTUK DOWNLOAD HASIL GAMBAR
 
