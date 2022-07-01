@@ -1,0 +1,49 @@
+@font-face {
+  font-family: berlin;
+  src: url("../../BRLNSR.TTF");
+}
+
+*{
+font-family:berlin;
+}
+.date{
+  border:none;
+  background:none;
+  text-align:center;
+  width:244px;
+  font-weight: bold;
+  font-size:24px
+}
+.time{
+  border:none;
+  background:none;
+  font-weight: bold;
+  text-align:center;
+  color: black;
+  width: 310px;
+  font-size:35px;
+
+  
+}
+
+p{
+  color: white;
+  font-size: 22px;
+}
+
+body{
+  background-color: black;
+  padding: 20px;
+}
+
+button{
+  height: 40px;
+}
+
+
+
+.map{width:500px;transform: translate(15%,115px);}
+
+#peringatandini{
+  background-color: #6cfd3e;
+}
