@@ -6,17 +6,21 @@
     pemberitahuan = document.querySelector(".pemberitahuan"),
     waktu = document.querySelector(".time")
 
-  if (!viewClicked) {
+  if (!viewClicked ) {
     pemberitahuan.style.display = 'none'
   }
 
   viewBtn.addEventListener("click", () => {
     viewClicked = true
-    pemberitahuan.style.display = 'block'  
+    if(!window.orientation > 1) {
+      pemberitahuan.style.display = 'block'  
+    }
   });
   formBtn.addEventListener("click", () => {
     viewClicked = false
-    pemberitahuan.style.display = 'none'  
+    if(!window.orientation > 1) {
+      pemberitahuan.style.display = 'none'  
+    } 
   });
 
   
