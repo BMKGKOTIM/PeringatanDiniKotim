@@ -1,7 +1,4 @@
-window.addEventListener("load", () => {
-    document.getElementById("text-method").value = 
-    "tgl 13 Februari 2023 pkl 01:27 WIB masih berpotensi terjadi Hujan Sedang-Lebat yang dapat disertai Kilat/Petir dan Angin Kencang pada pkl. 01:37 WIB di Kabupaten Kotawaringin Timur: Teluk Sampit, Kabupaten Katingan: Katingan Kuala, Kabupaten Seruyan: Seruyan Hilir, Seruyan Hilir Timur, dan sekitarnya. Dan dapat meluas ke wilayah Kabupaten Kotawaringin Timur: Baamang, Mentawa Baru Ketapang, Mentaya Hilir Utara, Mentaya Hilir Selatan, Pulau Hanaut, Seranau, Kabupaten Katingan: Kamipang, Mendawai, Kabupaten Seruyan: Danau Sembuluh, Hanau, Seruyan Raya, dan sekitarnya. Kondisi ini diperkirakan masih akan berlangsung hingga pkl 04:30 WIB"
-})
+
 
 
 function textToMap()
