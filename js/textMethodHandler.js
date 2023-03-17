@@ -4,18 +4,14 @@
 function textToMap()
 {
 
-	let textPeringatanDini = document.getElementById("text-method").value.split("masih berpotensi terjadi Hujan Sedang-Lebat yang dapat disertai Kilat/Petir dan Angin Kencang"),
-	    textMeluasKe = document.getElementById("text-method").value.split("Dan dapat meluas ke wilayah")
-	textPeringatanDini.shift()
-	textMeluasKe.shift()
-	let textPer = textPeringatanDini[0].split("Kabupaten Kotawaringin Timur:"),
-		textMel = textMeluasKe[0].split("Kabupaten Kotawaringin Timur:")
-	textPer.shift()
-	textMel.shift()
-    let peringatanDini = textPer[0].split(','),
-        meluasKe = textMel[0].split(",")
-	meluasKe.push(textMel[0].split(",")[meluasKe.length - 1].split(".")[0])
-    peringatanDini.push(textPer[0].split(",")[peringatanDini.length - 1].split(".")[0])
+    let text = document.getElementById("text-method").value.split("Kabupaten Kotawaringin Timur:")
+    text.shift()
+    let peringatanDini = text[0].split(","),
+    meluasKe = text[1].split(",")
+    peringatanDini.pop()
+    meluasKe.pop()
+    
+    
 for(let i = 0; i < peringatanDini.length ; i++) {
     let x = peringatanDini[i];
     x == " Teluk Sampit" ? 
