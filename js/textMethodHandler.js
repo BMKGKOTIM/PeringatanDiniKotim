@@ -1,15 +1,15 @@
 
-
-
 function textToMap()
 {
-
-    let text = document.getElementById("text-method").value.split("Kabupaten Kotawaringin Timur:")
-    text.shift()
-    let peringatanDini = text[0].split(","),
-    meluasKe = text[1].split(",")
-    peringatanDini.pop()
-    meluasKe.pop()
+	let textOri = document.getElementById("text-method").value;
+	let peringatanDiniArray = textOri.split("berpotensi terjadi Hujan Sedang-Lebat yang dapat disertai Kilat/Petir dan Angin Kencang")
+	let meluasKeArray = textOri.split("Dan dapat meluas ke wilayah")
+	let searchByKotim = peringatanDiniArray[1].split("Kabupaten Kotawaringin Timur:")
+	let searchByKotim2 = meluasKeArray[1].split("Kotawaringin Timur:")
+	console.log(searchByKotim2)
+    let peringatanDini = searchByKotim[1].split(","),
+    meluasKe = searchByKotim2[searchByKotim2.length - 1].split(",")
+	console.log(meluasKe)
     
     
 for(let i = 0; i < peringatanDini.length ; i++) {
@@ -55,10 +55,11 @@ for(let i = 0; i < meluasKe.length ; i++) {
     let y = meluasKe[i];
     y == " Teluk Sampit" ? 
     getNameMap("teluksampit", "asset/img/printmap/teluksampit2.png") : 
-    y == " Antang Kalang" ?
-    getNameMap("antangkalang", "asset/img/printmap/antangkalang2.png") : 
-    y == " Pulau Hanaut" ?
+     y == " Pulau Hanaut" ?
     getNameMap("pulauhanaut", "asset/img/printmap/pulauhanaut2.png") : 
+	y == " Antang Kalang" ?
+    getNameMap("antangkalang", "asset/img/printmap/antangkalang2.png") : 
+ 
     y == " Baamang" ?
     getNameMap("baamang", "asset/img/printmap/baamang2.png") : 
     y == " Seranau" ?
