@@ -1,5 +1,6 @@
 
   downloadBtn.addEventListener("click", () => {
+	  console.log(viewClicked)
     var opt = {
         quality: 1.5,
         width: 1080,
@@ -12,7 +13,6 @@
         icon: 'warning',
         confirmButtonColor: '#3085d6',
       })
-      console.log(waktu.value)
     } else if(waktu.value === ""){
         Swal.fire({
             title: 'Tidak Bisa Mendownload',
@@ -29,4 +29,3 @@
           });
     }
   })
-
