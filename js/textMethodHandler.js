@@ -6,10 +6,8 @@ function textToMap()
 	let meluasKeArray = textOri.split("Dan dapat meluas ke wilayah")
 	let searchByKotim = peringatanDiniArray[1].split("Kabupaten Kotawaringin Timur:")
 	let searchByKotim2 = meluasKeArray[1].split("Kotawaringin Timur:")
-	console.log(searchByKotim2)
     let peringatanDini = searchByKotim[1].split(","),
     meluasKe = searchByKotim2[searchByKotim2.length - 1].split(",")
-	console.log(meluasKe)
     
     
 for(let i = 0; i < peringatanDini.length ; i++) {
@@ -97,4 +95,21 @@ for(let i = 0; i < meluasKe.length ; i++) {
 
 function getNameMap(name, src){
     document.getElementsByName(name)[0].src = src
+	document.querySelector('.'+name).value = src
 }
+
+
+let statusViewTab = false;
+document.getElementById("view-tab").addEventListener("click", () => {
+	if(!statusViewTab) {
+		Swal.fire({
+        title: 'Pemberitahuan',
+        text: "Silahkan Tunggu Sampai Peta Terload Semua!",
+        icon: 'info',
+        confirmButtonColor: '#3085d6',
+      })
+	statusViewTab = true;
+	
+	}
+
+})
