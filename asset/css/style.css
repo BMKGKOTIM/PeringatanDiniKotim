@@ -96,16 +96,3 @@ button{
 	justify-content: center;
 }
 
-@media only screen and (max-width: 600px) {
-	.form-wrapper {
-		display: block;
-	}
-
-    }
-
-@media only screen and (min-width: 600px) {
-	.form-wrapper {
-		display: flex;
-		justify-content: center;
-	}
-}
